@@ -28,7 +28,7 @@ class StartScreenViewController: UIViewController {
     private func setUIView() {
         view.addSubview(mainText)
         
-        mainText.text = "Jameson"
+        mainText.text = "Button"
         mainText.textColor = UIColor(
             red: 0.945,
             green: 0.902,
@@ -47,7 +47,7 @@ class StartScreenViewController: UIViewController {
         
         view.addSubview(secondText)
         
-        secondText.text = "The power of taste"
+        secondText.text = "Create your design"
         secondText.textColor = UIColor(
             red: 0.945,
             green: 0.902,
@@ -84,6 +84,12 @@ class StartScreenViewController: UIViewController {
             alpha: 1
         )
         
+        button.addTarget(
+            self,
+            action: #selector(discoverButtonTapped),
+            for: .touchUpInside
+        )
+        
         button.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -92,5 +98,11 @@ class StartScreenViewController: UIViewController {
             button.heightAnchor.constraint(equalToConstant: 50),
             button.centerYAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
+    }
+    
+    @objc func discoverButtonTapped() {
+        let mainScreen = MainScreenViewController()
+        mainScreen.title = "Button Screen"
+        navigationController?.pushViewController(mainScreen, animated: true)
     }
 }
