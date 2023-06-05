@@ -12,6 +12,7 @@
 		C2E87AC22A25123A004110B5 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E87AC12A25123A004110B5 /* StartScreenViewController.swift */; };
 		C2E87AC72A25123D004110B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E87AC62A25123D004110B5 /* Assets.xcassets */; };
 		C2E87ACA2A25123D004110B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E87AC82A25123D004110B5 /* LaunchScreen.storyboard */; };
+		C2E87AD22A2D08F1004110B5 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E87AD12A2D08F0004110B5 /* MainScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2E87AC62A25123D004110B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E87AC92A25123D004110B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2E87ACB2A25123D004110B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E87AD12A2D08F0004110B5 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C2E87ABD2A25123A004110B5 /* AppDelegate.swift */,
 				C2E87ABF2A25123A004110B5 /* SceneDelegate.swift */,
 				C2E87AC12A25123A004110B5 /* StartScreenViewController.swift */,
+				C2E87AD12A2D08F0004110B5 /* MainScreenViewController.swift */,
 				C2E87AC62A25123D004110B5 /* Assets.xcassets */,
 				C2E87AC82A25123D004110B5 /* LaunchScreen.storyboard */,
 				C2E87ACB2A25123D004110B5 /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E87AC22A25123A004110B5 /* StartScreenViewController.swift in Sources */,
+				C2E87AD22A2D08F1004110B5 /* MainScreenViewController.swift in Sources */,
 				C2E87ABE2A25123A004110B5 /* AppDelegate.swift in Sources */,
 				C2E87AC02A25123A004110B5 /* SceneDelegate.swift in Sources */,
 			);
