@@ -20,8 +20,10 @@ class MainScreenViewController: UIViewController {
         view.backgroundColor = .black
         setFilledButton()
         setTintedButton()
+        setGrayButton()
     }
     
+    // Mark: - Set a UI view of Filled Button.
     func setFilledButton() {
         view.addSubview(filledButton)
         
@@ -42,6 +44,7 @@ class MainScreenViewController: UIViewController {
         ])
     }
     
+    // Mark: - Set a UI view of Tinted Button.
     func setTintedButton() {
         view.addSubview(tintedButton)
         
@@ -60,6 +63,22 @@ class MainScreenViewController: UIViewController {
             tintedButton.heightAnchor.constraint(equalToConstant: 50),
             tintedButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             tintedButton.centerYAnchor.constraint(equalTo: filledButton.bottomAnchor, constant: 40)
+        ])
+    }
+    
+    // Mark: - Set a UI view of Gray Button.
+    func setGrayButton() {
+        view.addSubview(grayButton)
+        
+        grayButton.configuration = .gray()
+        
+        grayButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            grayButton.widthAnchor.constraint(equalToConstant: 200),
+            grayButton.heightAnchor.constraint(equalToConstant: 50),
+            grayButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            grayButton.centerYAnchor.constraint(equalTo: tintedButton.bottomAnchor, constant: 40)
         ])
     }
 }
